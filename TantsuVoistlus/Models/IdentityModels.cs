@@ -29,5 +29,7 @@ namespace TantsuVoistlus.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<TantsuVoistlus.Models.Voistlus> Voistlus { get; set; }
     }
 }
