@@ -13,6 +13,7 @@ namespace TantsuVoistlus.Controllers
     public class VoistlusController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+        [Authorize]
         public ActionResult SisestaHinne()
         {
             return View();
