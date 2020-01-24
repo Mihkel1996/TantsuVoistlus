@@ -18,7 +18,7 @@ namespace TantsuVoistlus.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult SisestaHinne([Bind(Include = "Id, Eesnimi1, Perenimi1, Eesnimi2, Perenimi2, Vanus, Hinded1, Hinded2, Hinded3, KeskmineHinne")] Voistlus voistlus)
+        public ActionResult SisestaHinne([Bind(Include = "Id, Eesnimi1, Perenimi1, Eesnimi2, Perenimi2, Vanus1, Vanus2, Hinded1, Hinded2, Hinded3, KeskmineHinne")] Voistlus voistlus)
         {
             if(ModelState.IsValid)
             {
