@@ -23,3 +23,36 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.title-image img {
+    background-color:mediumaquamarine;
+    overflow:auto;
+}
+@media (min-width: 768px) {
+    .title-image img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 965px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 89%;
+    }
+}
+
+.review {
+    padding: 2px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.review h4 {
+    color: maroon;
+    padding: 5px;
+    background: #cccc99;
+}

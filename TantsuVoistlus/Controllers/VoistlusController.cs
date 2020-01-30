@@ -19,7 +19,7 @@ namespace TantsuVoistlus.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult SisestaHinne([Bind(Include = "Id, Eesnimi1, Perenimi1, Eesnimi2, Perenimi2, Vanus1, Vanus2, Hinded1, Hinded2, Hinded3, KeskmineHinne")] Voistlus voistlus)
+        public ActionResult SisestaHinne([Bind(Include = "Id, Voistluspaar, Hinded1, Hinded2, Hinded3, KeskmineHinne")] Voistlus voistlus)
         {
             if(ModelState.IsValid)
             {
@@ -80,7 +80,7 @@ namespace TantsuVoistlus.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Eesnimi1,Perenimi1,Eesnimi2,Perenimi2,Vanus1,Vanus2,Hinded1,Hinded2,Hinded3")] Voistlus voistlus)
+        public ActionResult Create([Bind(Include = "Id,Voistluspaar,Hinded1,Hinded2,Hinded3,KeskmineHinne")] Voistlus voistlus)
         {
             if (ModelState.IsValid)
             {
@@ -112,7 +112,7 @@ namespace TantsuVoistlus.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Eesnimi1,Perenimi1,Eesnimi2,Perenimi2,Vanus1,Vanus2,Hinded1,Hinded2,Hinded3")] Voistlus voistlus)
+        public ActionResult Edit([Bind(Include = "Id,Voistluspaar,Hinded1,Hinded2,Hinded3,KeskmineHinne")] Voistlus voistlus)
         {
             if (ModelState.IsValid)
             {
