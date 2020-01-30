@@ -9,8 +9,9 @@ namespace TantsuVoistlus.Models
     public class Voistlus
     {
         
-        [Range(0, 5)]
+        
         public string Voistluspaar { get; set; }
+        [Range(0, 5)]
         public int Hinded1 { get; set; }
         public int Hinded2 { get; set; }
         public int Hinded3 { get; set; }
