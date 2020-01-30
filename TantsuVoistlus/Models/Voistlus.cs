@@ -8,8 +8,8 @@ namespace TantsuVoistlus.Models
 {
     public class Voistlus
     {
-        
-        
+
+        public int Id { get; set; }
         public string Voistluspaar { get; set; }
         [Range(1, 5)]
         public int Hinded1 { get; set; }

@@ -10,9 +10,46 @@ using TantsuVoistlus.Models;
 
 namespace TantsuVoistlus.Controllers
 {
-    public class VoistlusController : Controller
+    public class VoistlushhController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+
+        [Authorize]
+        [HttpGet]
+        public ActionResult SisestaHinne()
+        {
+            return View();
+        }
+        [Authorize]
+        [HttpPost]
+        public ActionResult SisestaHinne([Bind(Include = "Id, Voistluspaar, Hinded1, Hinded2, Hinded3, KeskmineHinne")] Voistlus voistlus)
+        {
+            if(ModelState.IsValid)
+            {
+                db.Voistlus.Add(voistlus);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(voistlus);
+        }
+        public ActionResult Hinded()
+        {
+            return View();
+        }
+        public ActionResult HindedTulemus(int? id)
+        {
+            if (ModelState.IsValid)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Voistlus voistlus = db.Voistlus.Find(id);
+            if (voistlus == null)
+            {
+                return RedirectToAction("Index");
+            }
+            return View(id);
+        }
+
 
         // GET: Voistlus
         public ActionResult Index()

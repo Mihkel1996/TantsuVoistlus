@@ -30,6 +30,6 @@ namespace TantsuVoistlus.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<TantsuVoistlus.Models.Voistlus> Voistlus { get; set; }
+        public DbSet<Voistlus> Voistlus { get; set; }
     }
 }
