@@ -20,6 +20,12 @@ namespace TantsuVoistlus.Controllers
             return View(db.Voistlus.ToList());
         }
 
+        public ActionResult Index()
+        {
+            if()
+            return View(db.Voistlus.ToList());
+        }
+
         // GET: Voistlus/Details/5
         public ActionResult Details(int? id)
         {
