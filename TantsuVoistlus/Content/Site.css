@@ -1,6 +1,12 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    border-top: solid 25px #000;
+    color: green;
+    font-size: .85em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,6 +28,16 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+html {
+    background-color: green;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, hgroup, nav, section {
+    display: block;
 }
 
 .title-image img {
@@ -55,4 +71,13 @@ textarea {
     color: maroon;
     padding: 5px;
     background: #cccc99;
+}
+
+.navbar-brand {
+    background: url(/Content/Design/3D-Wood-Wall-Paneling-900-American-Walnut.jpg) no-repeat top left;
+    background-size: 100%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
 }
