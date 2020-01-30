@@ -17,7 +17,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("TantsuVoistlus", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                
+                <a href="@Url.Action("Index", "Home")" title="" class="links">
+                    <img alt="picture" class="picture" src="@Url.Content("~/Content/Design/cover.png")">
+                </a>
+
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

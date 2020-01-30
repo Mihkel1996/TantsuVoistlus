@@ -39,26 +39,13 @@ html {
 header, footer, hgroup, nav, section {
     display: block;
 }
+.navbar {
+    background-color: white;
+}
 
 .title-image img {
     background-color:mediumaquamarine;
     overflow:auto;
-}
-@media (min-width: 768px) {
-    .title-image img {
-        max-width: 90%;
-        height: auto;
-    }
-}
-@media (min-width: 992px) {
-    .container {
-        max-width: 965px;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        max-width: 89%;
-    }
 }
 
 .review {
@@ -74,10 +61,28 @@ header, footer, hgroup, nav, section {
 }
 
 .navbar-brand {
-    background: url(/Content/Design/3D-Wood-Wall-Paneling-900-American-Walnut.jpg) no-repeat top left;
+    background: url(Design/cover.png) no-repeat top left;
     background-size: 100%;
     display: block;
     width: 50px;
     height: 50px;
     text-indent: -9999px;
+}
+
+.links {
+    width: 50px;
+    height: auto;
+}
+
+.pictures {
+    width: 50px;
+    height: auto;
+}
+
+.nav.navbar-nav li a {
+    color: white;
+}
+
+.nav.navbar-nav li a:hover {
+    color: #0C27DF;
 }
