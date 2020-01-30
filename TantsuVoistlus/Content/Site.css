@@ -61,7 +61,6 @@ header, footer, hgroup, nav, section {
 }
 
 .navbar-brand {
-    background: url(Design/cover.png) no-repeat top left;
     background-size: 100%;
     display: block;
     width: 50px;
@@ -70,19 +69,19 @@ header, footer, hgroup, nav, section {
 }
 
 .links {
-    width: 50px;
-    height: auto;
+    width: auto;
+    height: 40px;
 }
 
-.pictures {
-    width: 50px;
-    height: auto;
+.picture {
+    width: auto;
+    height: 40px;
 }
 
 .nav.navbar-nav li a {
-    color: white;
+    color: black;
 }
 
 .nav.navbar-nav li a:hover {
-    color: #0C27DF;
+    color: green;
 }

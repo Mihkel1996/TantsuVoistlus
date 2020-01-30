@@ -11,9 +11,11 @@ namespace TantsuVoistlus.Models
         
         
         public string Voistluspaar { get; set; }
-        [Range(0, 5)]
+        [Range(1, 5)]
         public int Hinded1 { get; set; }
+        [Range(1, 5)]
         public int Hinded2 { get; set; }
+        [Range(1, 5)]
         public int Hinded3 { get; set; }
         public int KeskmineHinne { get; set; }
     }

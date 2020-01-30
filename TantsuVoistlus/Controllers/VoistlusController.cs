@@ -14,10 +14,12 @@ namespace TantsuVoistlus.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
         [Authorize]
+        [HttpGet]
         public ActionResult SisestaHinne()
         {
             return View();
         }
+        [Authorize]
         [HttpPost]
         public ActionResult SisestaHinne([Bind(Include = "Id, Voistluspaar, Hinded1, Hinded2, Hinded3, KeskmineHinne")] Voistlus voistlus)
         {
