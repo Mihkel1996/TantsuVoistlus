@@ -22,7 +22,7 @@ namespace TantsuVoistlus.Controllers
 
         public ActionResult Index()
         {
-            if()
+            
             return View(db.Voistlus.ToList());
         }
 
